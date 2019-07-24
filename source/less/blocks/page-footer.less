@@ -1,3 +1,35 @@
 .page-footer {
-  margin-top: 20px;
+  width: 320px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    width: 768px;
+  }
+
+  .page-footer__wrapper {
+    width: 648px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 60px;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 1200px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .page-footer__wrapper {
+    width: 960px;
+    margin-left: 120px;
+  }
 }

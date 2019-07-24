@@ -1,5 +1,5 @@
 .social {
-  width: 153px;
+  width: 280px;
 }
 
 .social__name {
@@ -12,6 +12,9 @@
 .social__list {
   .non-style;
   margin-bottom: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .social__item {
@@ -25,4 +28,27 @@
 .social__link {
   display: block;
   margin-top: 16px;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    width: 452px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social__list {
+    margin-right: 53px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social {
+    width: 680px;
+  }
+
+  .social__list {
+    margin-right: 125px;
+  }
 }

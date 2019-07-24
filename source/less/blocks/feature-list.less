@@ -3,11 +3,15 @@
   background-color: @white;
   .non-style;
   color: @black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 320px;
+  align-items: center;
 }
 
 .features-list__item {
   width: 230px;
-  margin-left: 70px;
   text-align: left;
   background-color: @white;
 }
@@ -22,4 +26,29 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+}
+
+@media (min-width: @tablet-width) {
+  .features-list {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+  }
+
+  .features-list__item {
+    width: 256px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .features-list {
+    width: 1200px;
+  }
+
+  .features-list__item {
+    width: 400px;
+  }
+
 }

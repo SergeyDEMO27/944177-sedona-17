@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -39,9 +41,11 @@
         </div>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--basic">
+            <div class="advantages__wrapper">
             <h3 class="advantages__title">настоящий городок</h3>
             <span class="advantages__order-number">№1</span>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <p class="advantages__picture">
               <img class="advantages__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="город Седона">
             </p>
@@ -61,9 +65,11 @@
             </ul>
           </li>
           <li class="advantages__item advantages__item--basic">
+            <div class="advantages__wrapper">
             <h3 class="advantages__title">там есть Мост дьявола</h3>
             <span class="advantages__order-number">№2</span>
             <p class="advantages__description">да, по нему можно пройти! если вы осмелитесь, конечно</p>
+            </div>
             <p class="advantages__picture">
               <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
             </p>
@@ -87,6 +93,7 @@
       </section>
     </main>
     <footer class="page-footer">
+      <div class="page-footer__wrapper">
         <div class="page-footer__social social">
           <b class="social__name">#VISITSEDONA</b>
           <ul class="social__list">
@@ -126,6 +133,7 @@
           <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="html academy">
         </a>
       </div>
+    </div>
     </footer>
   </body>
 </html>

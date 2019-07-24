@@ -1,5 +1,8 @@
 .copyright {
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .copyright__text {
@@ -11,4 +14,17 @@
 
 .copyright__link {
   margin-left: 11px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: 196px;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    width: 280px;
+  }
 }
