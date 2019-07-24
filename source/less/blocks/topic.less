@@ -1,19 +1,49 @@
 .topic {
-  width: 310px;
+  width: 320px;
   text-align: center;
   background-color: @white;
 }
 
 .topic__title {
+  width: 260px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .topic__description {
+  width: 260px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .topic {
+    width: 768px;
+  }
+
+  .topic__title {
+    width: 500px;
+  }
+
+  .topic__description {
+    width: 500px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .topic {
+    width: 1200px;
+  }
+
+  .topic__description {
+    width: 440px;
+  }
 }
