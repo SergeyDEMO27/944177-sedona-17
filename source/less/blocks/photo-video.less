@@ -13,9 +13,22 @@
   flex-wrap: wrap;
 }
 
+.photo-video__item {
+  margin-bottom: 25px;
+}
+
+.photo-video__picture {
+  margin-bottom: 11px;
+}
+
 .photo-video__image {
   width: 280px;
   height: 280px;
+}
+
+.photo-video__title {
+  margin-top: 5px;
+  margin-bottom: 0;
 }
 
 .photo-video__title,
@@ -27,6 +40,8 @@
 }
 
 .photo-video__author {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -47,10 +62,12 @@
   }
 
   .photo-video__item {
+    position: relative;
     width: 324px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-bottom: 0;
   }
 
   .photo-video__item:first-child {
@@ -59,21 +76,46 @@
 
   .photo-video__picture {
     order: -3;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .photo-video__item:first-child .photo-video__picture {
+    width: 648px;
+    height: 400px;
+    margin-top: 16px;
+    margin-bottom: 11px;
   }
 
   .photo-video__title {
     order: -2;
     margin-bottom: 0;
+    margin-left: 20px;
+  }
+
+  .photo-video__item:nth-child(4) .photo-video__title {
+    margin-top: 5px;
   }
 
   .photo-video__likes {
+    position: absolute;
     order: -1;
-    align-self: flex-end;
-    margin-right: 30px;
+    right: 29px;
+    bottom: 20px;
+  }
+
+  .photo-video__item:first-child .photo-video__likes {
+    right: 20px;
+    bottom: 18px;
+  }
+
+  .photo-video__item:nth-child(3) .photo-video__likes {
+    right: 36px;
   }
 
   .photo-video__author {
     margin-top: 0;
+    margin-left: 20px;
   }
 }
 
@@ -92,5 +134,32 @@
 
   .photo-video__item:first-child {
     width: 1200px;
+  }
+
+  .photo-video__wrapper {
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+  }
+
+  .photo-video__picture {
+    margin-top: 0;
+    height: 267px;
+  }
+
+  .photo-video__item:first-child .photo-video__picture {
+    width: 1200px;
+    margin-top: 19px;
+    margin-bottom: 0;
+  }
+
+  .photo-video__likes {
+    left: 310px;
+    bottom: 18px;
+  }
+
+  .photo-video__item:first-child .photo-video__likes {
+    left: 1111px;
+    bottom: 18px;
   }
 }
