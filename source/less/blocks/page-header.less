@@ -6,7 +6,11 @@
   text-align: center;
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 305px;
+  margin-bottom: 275px;
+}
+
+.page-header__photo {
+  margin-bottom: 42px;
 }
 
 .page-header__logo {
@@ -31,6 +35,11 @@
 @media (min-width: @tablet-width) {
   .page-header {
     width: 768px;
+    margin-bottom: 432px;
+  }
+
+  .page-header__photo {
+    margin-bottom: 227px;
   }
 
   .page-header__logo {
@@ -48,12 +57,16 @@
 @media (min-width: @desktop-width) {
   .page-header {
     width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
+  }
+
+  .page-header__photo {
+    margin-bottom: 275px;
   }
 
   .page-header__logo {
-    left: 580px;
+    position: absolute;
+    left: 548px;
+    top: 0;
   }
 
   .page-header__title-image {

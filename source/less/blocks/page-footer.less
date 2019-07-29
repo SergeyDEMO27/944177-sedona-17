@@ -1,13 +1,22 @@
 .page-footer {
   width: 320px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 6px;
   text-align: center;
+}
+
+.page-footer__photo {
+  margin-top: 65px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     width: 768px;
+    margin-top: 38px;
+  }
+
+  .page-footer__photo {
+    margin-top: 62px;
   }
 
   .page-footer__wrapper {
@@ -23,12 +32,16 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     width: 1200px;
-    padding-left: 40px;
-    padding-right: 40px;
+    margin-top: -20px;
+  }
+
+  .page-footer__photo {
+    margin-top: 97px;
   }
 
   .page-footer__wrapper {
     width: 960px;
     margin-left: 120px;
+    margin-top: 70px;
   }
 }

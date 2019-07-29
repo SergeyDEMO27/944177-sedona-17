@@ -2,6 +2,7 @@
   width: 320px;
   text-align: center;
   background-color: @white;
+  margin-bottom: 29px;
 }
 
 .topic__title {
@@ -12,10 +13,11 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 26px;
 }
 
 .topic__description {
-  width: 260px;
+  width: 270px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -27,14 +29,25 @@
 @media (min-width: @tablet-width) {
   .topic {
     width: 768px;
+    margin-bottom: 49px;
   }
 
   .topic__title {
+    font-size: 21px;
     width: 500px;
+    margin-bottom: 30px;
+  }
+
+  .topic__photo .topic__title {
+    font-size: 30px;
   }
 
   .topic__description {
     width: 500px;
+  }
+
+  .topic__photo .topic__description {
+    width: 433px;
   }
 }
 
@@ -44,6 +57,6 @@
   }
 
   .topic__description {
-    width: 440px;
+    width: 496px;
   }
 }
