@@ -67,46 +67,67 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-bottom: 9px;
     margin-bottom: 0;
+    background-color: #f2f2f2;
   }
 
   .photo-video__item:first-child {
     width: 648px;
+    min-width: 480px;
+    padding-bottom: 9px;
   }
 
   .photo-video__picture {
     order: -3;
-    margin-top: 5px;
+    margin-top: 0;
     margin-bottom: 0;
+  }
+
+  .photo-video__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-video__item:first-child .photo-video__image {
+    width: 648px;
+    height: 400px;
   }
 
   .photo-video__item:first-child .photo-video__picture {
     width: 648px;
     height: 400px;
-    margin-top: 16px;
-    margin-bottom: 11px;
+    margin-bottom: 15px;
   }
 
   .photo-video__title {
     order: -2;
+    margin-top: 0;
     margin-bottom: 0;
-    margin-left: 20px;
+    margin-left: 21px;
+  }
+
+  .photo-video__item:nth-child(2) .photo-video__title {
+    padding-top: 12px;
+  }
+
+  .photo-video__item:nth-child(3) .photo-video__title {
+    padding-top: 12px;
   }
 
   .photo-video__item:nth-child(4) .photo-video__title {
-    margin-top: 5px;
+    margin-top: 12px;
   }
 
   .photo-video__likes {
     position: absolute;
     order: -1;
     right: 29px;
-    bottom: 20px;
+    bottom: 27px;
   }
 
   .photo-video__item:first-child .photo-video__likes {
     right: 20px;
-    bottom: 18px;
   }
 
   .photo-video__item:nth-child(3) .photo-video__likes {
@@ -130,10 +151,12 @@
 
   .photo-video__item {
     width: 400px;
+    padding-bottom: 0;
   }
 
   .photo-video__item:first-child {
     width: 1200px;
+    padding-bottom: 0;
   }
 
   .photo-video__wrapper {
@@ -143,14 +166,20 @@
   }
 
   .photo-video__picture {
-    margin-top: 0;
     height: 267px;
   }
 
   .photo-video__item:first-child .photo-video__picture {
     width: 1200px;
-    margin-top: 19px;
     margin-bottom: 0;
+  }
+
+  .photo-video__image {
+    width: 400px;
+  }
+
+  .photo-video__item:first-child .photo-video__image {
+    width: 1200px;
   }
 
   .photo-video__likes {
