@@ -5,6 +5,11 @@
   background-size: cover;
   background-position: -220px;
   margin-bottom: 40px;
+  text-align: center;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .welcome--photo {
@@ -14,8 +19,14 @@
   margin-bottom: 38px;
 }
 
-@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-  background-image: url("../../img/bg-back-mobile@2x.jpg");
+.welcome__title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 90px;
+}
+
+.welcome--photo .welcome__title {
+  margin-top: 52px;
 }
 
 @media (min-width: @tablet-width) {
@@ -24,6 +35,10 @@
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-position: 0;
     margin-bottom: 51px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .welcome--photo {
@@ -32,14 +47,32 @@
     margin-bottom: 75px;
   }
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/bg-back-tablet@2x.jpg");
+  .welcome__title {
+    margin-top: 77px;
+  }
+
+  .welcome--photo .welcome__title {
+      margin-top: 95px;
+    }
+
+  .welcome__title img {
+    width: 460px;
+    height: 350px;
+  }
+
+  .welcome--photo img {
+    width: 458px;
+    height: 78px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .welcome {
     background-image: url("../../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .welcome--photo {
@@ -48,7 +81,16 @@
     margin-bottom: 113px;
   }
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../../img/bg-back-desktop@2x.jpg");
+  .welcome__title {
+    margin-top: 78px;
+  }
+
+  .welcome--photo .welcome__title {
+      margin-top: 101px;
+    }
+
+  .welcome--photo img {
+    width: 461px;
+    height: 80px;
   }
 }
