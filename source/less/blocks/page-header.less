@@ -11,11 +11,23 @@
 
 .page-header__logo {
   position: absolute;
-  left: 110px;
+  left: 68px;
   top: 223px;
   width: 102px;
   height: 83px;
   z-index: 100;
+}
+
+.page-header__logo-sedona {
+  display: none;
+}
+
+.page-header__logo-city {
+  display: none;
+}
+
+.page-header__logo-sedona-city {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -26,8 +38,14 @@
 
   .page-header__logo {
     position: absolute;
-    left: 333px;
+    left: 291px;
     top: 0;
+    width: 102px;
+    height: 96px;
+  }
+
+  .page-header__logo-city {
+    display: block;
   }
 }
 
@@ -38,12 +56,16 @@
 
   .page-header__logo {
     position: absolute;
-    left: 505px;
+    left: 506px;
     top: 0;
+    width: 188px;
   }
 
-  .page-header__logo-image {
-    width: 188px;
-    height: 96px;
+  .page-header__logo-sedona {
+    display: block;
+  }
+
+  .page-header__logo-sedona-city {
+    display: block;
   }
 }
