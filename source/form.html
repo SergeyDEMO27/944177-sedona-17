@@ -8,6 +8,22 @@
     <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
+    <svg style="display: none;">
+    <symbol id="htmlacademy-logo" viewBox="0 0 27 34">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></svg>
+    </symbol>
+    <g class="social-icons">
+      <symbol id="twitter-icon" viewBox="0 0 19 15">
+        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"/></svg>
+      </symbol>
+      <symbol id="facebook-icon" viewBox="0 0 9 19">
+        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="8.672" height="18.944"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/></svg>
+      </symbol>
+      <symbol id="youtube-icon" viewBox="0 0 20 15">
+        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="19.979" height="14.015"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/></svg>
+      </symbol>
+    </g>
+  </svg>
     <div class="container">
     <header class="page-header">
       <nav class="main-nav">
@@ -27,15 +43,15 @@
         </ul>
         <button class="main-nav__toggle" type="button">открыть меню</button>
       </nav>
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-      <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
-    </picture>
-      </a>
-    </header>
-    <main class="page-main">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+      </picture>
+          </a>
+        </header>
+        <main class="page-main">
       <section class="welcome welcome--photo">
         <h1 class="welcome__title">
           <img src="img/text-sedona.svg" width="229" height="39" alt="Sedona">
@@ -49,30 +65,26 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="#">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-    <g>
-      <g>
-        <path fill="#ffffff" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
-      </g>
-    </g>
-  </svg>
                 <span class="visually-hidden">мы в твиттере</span>
+                <svg class="social__twitter" width="19" height="15">
+                  <use xlink:href="#twitter-icon"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-    <path fill="#ffffff" d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
-  </svg>
                 <span class="visually-hidden">мы в фейсбуке</span>
+                <svg class="social__facebook" width="9" height="19">
+                  <use xlink:href="#facebook-icon"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="#">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-    <path fill="#ffffff" d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
-  </svg>
                 <span class="visually-hidden">мы в ютьюбе</span>
+                <svg class="social__youtube" width="20" height="15">
+                  <use xlink:href="#youtube-icon"></use>
+                </svg>
                   </a>
             </li>
           </ul>
@@ -80,7 +92,9 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="html academy">
+          <svg class="copyright__academy-logo" width="27" height="34">
+            <use xlink:href="#htmlacademy-logo"></use>
+          </svg>
         </a>
       </div>
     </div>
