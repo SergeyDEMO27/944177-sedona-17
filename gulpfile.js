@@ -79,8 +79,8 @@ gulp.task("delete", function () {
 
 gulp.task("server", function () {
   server.init({
-    server: "source/",
-    // server: "build/",
+    // server: "source/",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -98,5 +98,5 @@ gulp.task("refresh", function () {
   done();
 });
 
-gulp.task("build", gulp.series("delete", "copy", "css", "sprite", "html", "images", "webp"))
+gulp.task("build", gulp.series("delete", "copy", "css", "sprite", "html"))
 gulp.task("start", gulp.series("build", "server"));

@@ -46,6 +46,7 @@
     "node": "8.16"
   },
   "dependencies": {
-    "gulp-rename": "^1.4.0"
+    "gulp-rename": "^1.4.0",
+    "normalize.less": "^1.0.0"
   }
 }
