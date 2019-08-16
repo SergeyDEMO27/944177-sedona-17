@@ -5,8 +5,24 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: 0;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 24px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  background-repeat: no-repeat;
 }
+
+.main-nav__toggle--burger {
+  background-image: url("../img/icon-menu.svg");
+}
+
+.main-nav__toggle--cross {
+  background-image: url("../img/icon-cross.svg");
+}
+
 
 @media (min-width: @tablet-width) {
   .main-nav {

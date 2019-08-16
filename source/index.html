@@ -15,13 +15,13 @@
     </symbol>
     <g class="social-icons">
       <symbol id="twitter-icon" viewBox="0 0 19 15">
-        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="14.663"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"></path></svg>
       </symbol>
       <symbol id="facebook-icon" viewBox="0 0 9 19">
-        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="8.672" height="18.944"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="8.672" height="18.944"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"></path></svg>
       </symbol>
       <symbol id="youtube-icon" viewBox="0 0 20 15">
-        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="19.979" height="14.015"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="19.979" height="14.015"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"></path></svg>
       </symbol>
     </g>
   </svg>
@@ -30,10 +30,10 @@
   </div> -->
     <div class="container">
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav show">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a>главная</a>
+            <a class="active">главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">фото и видео</a>
@@ -45,8 +45,8 @@
             <a href="#">Html Academy</a>
           </li>
         </ul>
-        <button class="main-nav__toggle" type="button">открыть меню</button>
       </nav>
+      <button class="main-nav__toggle main-nav__toggle--burger" type="button"><span class="visually-hidden">открыть меню</span></button>
       <a class="page-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -58,10 +58,12 @@
     <main class="page-main">
       <section class="welcome">
         <h1 class="welcome__title">
+          <span class="visually-hidden">SEDONA</span>
           <img src="img/text-sedona-index.svg" width="282" height="214" alt="Sedona">
         </h1>
       </section>
       <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
         <div class="topic">
           <h2 class="topic__title">Седона — небольшой городок в аризоне, заслуживающий большего!</h2>
           <p class="topic__description">рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
@@ -133,6 +135,14 @@
         </ul>
       </section>
       <section class="offers">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <div class="offers-wrapper">
+        <p class="offers__description"><span class="offers-headline">заинтересовались?</span><span class="offers-segment">Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="offers__find" href="#">найти гостиницу</a>
+        <div class="offers__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565763446!2d-111.83015796067339!3d34.85444381545257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1565947106873!5m2!1sru!2sru" width="320" height="350" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -177,5 +187,6 @@
     </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
   </body>
 </html>

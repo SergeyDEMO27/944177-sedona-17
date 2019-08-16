@@ -1,0 +1,79 @@
+.modal {
+  position: relative;
+}
+
+.modal__popup {
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  width: 320px;
+  height: 280px;
+  padding-top: 43px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px #e6e6e6;
+}
+
+.modal--error {
+  margin-top: 15px;
+  height: 237px;
+  bottom: -635px;
+}
+
+.modal--success {
+  bottom: -335px;
+}
+
+.modal__title {
+  width: 212px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal__description {
+  width: 217px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+
+.modal--error .modal__description {
+  margin-bottom: 2px;
+}
+
+.modal__wrapper {
+  width: 320px;
+  height: 98px;
+  background-color: #f2f2f2;
+}
+
+.modal__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 280px;
+  height: 58px;
+  background-color: #81b3d2;
+  border: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.modal--error .modal__btn {
+  width: 180px;
+}
