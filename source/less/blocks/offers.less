@@ -5,7 +5,8 @@
 }
 
 .offers {
-  min-height: 637px;
+  min-height: 613px;
+  margin-bottom: 32px;
 }
 
 .offers--photo {
@@ -43,8 +44,11 @@
 }
 
 .offers__find {
+  display: block;
   margin-right: auto;
   margin-left: auto;
+  width: 187px;
+  height: 26px;
   margin-bottom: 49px;
   padding: 16px 47px;
   background-color: #81b3d2;
@@ -70,25 +74,50 @@
 }
 
 .offers__map {
+  position: relative;
   width: 320px;
   height: 350px;
+  z-index: -2;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
   }
 }
 
+.offers__map::after {
+  position: absolute;
+  left: 44%;
+  top: 45%;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-color: #81b4d4;
+  border: 5px solid @white;
+  border-radius: 50%;
+  z-index: -1;
+}
+
 .offers__map--photo {
   height: 201px;
 }
 
-.offers__video {
+.offers__presentation {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .offers__video-slider {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.offers__video {
   position: absolute;
   top: -45px;
   left: 20px;
@@ -121,8 +150,15 @@
   background-color: @white;
 }
 
+.offers__video-slider:focus::after {
+  outline: auto;
+  outline-color: -webkit-focus-ring-color;
+}
+
 .offers__video-controls {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
   top: 0;
   left: 20px;
   width: 280px;
@@ -130,9 +166,19 @@
   background-color: #f2f2f2;
 }
 
-.replay-icon {
-  margin-left: 25px;
-  margin-top: 23px;
+.offers__video-controls button {
+  background-color: transparent;
+  border: none;
+}
+
+.offers__replay-btn {
+  width: 30px;
+  height: 27px;
+  margin-left: 18px;
+  margin-top: 20px;
+}
+
+.offers__replay-icon {
   fill: #5c6870;
 
   &:hover {
@@ -144,9 +190,14 @@
   }
 }
 
-.subtitles-icon {
-  margin-left: 129px;
-  margin-top: 23px;
+.offers__subtitles-btn {
+  width: 44px;
+  height: 30px;
+  margin-left: 120px;
+  margin-top: 20px;
+}
+
+.offers__subtitles-icon {
   fill: #5c6870;
 
   &:hover {
@@ -158,9 +209,14 @@
   }
 }
 
-.fullscreen-icon {
-  margin-left: 26px;
-  margin-top: 23px;
+.offers__fullscreen-btn {
+  width: 30px;
+  height: 27px;
+  margin-left: 19px;
+  margin-top: 21px;
+}
+
+.offers__fullscreen-icon {
   fill: #5c6870;
 
   &:hover {
@@ -174,7 +230,7 @@
 
 @media (min-width: @tablet-width) {
   .offers {
-    min-height: 668px;
+    min-height: 625px;
   }
 
   .offers__description {
@@ -214,6 +270,11 @@
     }
   }
 
+  .offers__map::after {
+    position: absolute;
+    left: 48%;
+  }
+
   .offers__map--photo {
     width: 648px;
     height: 500px;
@@ -231,7 +292,11 @@
     height: 500px;
   }
 
-  .offers__video-slider {
+  .offers__presentation {
+    flex-direction: row;
+  }
+
+  .offers__video {
     background-color: transparent;
   }
 
@@ -256,9 +321,12 @@
     opacity: 0.6;
   }
 
-  .replay-icon {
-    margin-left: 35px;
-    margin-top: 37px;
+  .offers__replay-btn {
+    margin-left: 28px;
+    margin-top: 33px;
+  }
+
+  .offers__replay-icon {
     fill: #ffffff;
 
     &:hover {
@@ -270,9 +338,12 @@
     }
   }
 
-  .subtitles-icon {
-    margin-left: 469px;
-    margin-top: 37px;
+  .offers__subtitles-btn {
+    margin-left: 460px;
+    margin-top: 33px;
+  }
+
+  .offers__subtitles-icon {
     fill: #ffffff;
 
     &:hover {
@@ -284,9 +355,12 @@
     }
   }
 
-  .fullscreen-icon {
-    margin-left: 26px;
-    margin-top: 37px;
+  .offers__fullscreen-btn {
+    margin-left: 19px;
+    margin-top: 33px;
+  }
+
+  .offers__fullscreen-icon {
     fill: #ffffff;
 
     &:hover {
@@ -300,13 +374,22 @@
 }
 
 @media (min-width: @desktop-width) {
+  .offers {
+    min-height: 635px;
+    margin-bottom: 0;
+  }
+
   .offers__description {
     width: 440px;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
 
   .offers__description--photo {
-    margin-bottom: 72px;
+    margin-bottom: 70px;
+  }
+
+  .offers-headline {
+    margin-bottom: 32px;
   }
 
   .offers__find {
@@ -355,18 +438,18 @@
     width: 800px;
   }
 
-  .replay-icon {
-    margin-left: 35px;
-    margin-top: 35px;
+  .offers__replay-btn {
+    margin-left: 28px;
+    margin-top: 33px;
   }
 
-  .subtitles-icon {
-    margin-left: 619px;
-    margin-top: 35px;
+  .offers__subtitles-btn {
+    margin-left: 610px;
+    margin-top: 33px;
   }
 
-  .fullscreen-icon {
-    margin-left: 26px;
-    margin-top: 35px;
+  .offers__fullscreen-btn {
+    margin-left: 19px;
+    margin-top: 33px;
   }
 }
