@@ -12,6 +12,7 @@
 
 .advantages__item {
   margin-bottom: 30px;
+  color: #333333;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -71,7 +72,12 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  color: #000000;
   margin-bottom: 10px;
+}
+
+.advantages__item--basic .advantages__title {
+  color: @white;
 }
 
 .advantages__title:nth-of-type(2) {
@@ -155,6 +161,10 @@
   padding-top: 37px;
   background-color: @blue;
   margin-bottom: -16px;
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 -22px;
 }
 
 .advantages__item:nth-child(2) .advantages__wrapper {
@@ -260,6 +270,7 @@
   .advantages__item:first-child .advantages__wrapper {
     min-height: 219px;
     margin-bottom: 0;
+    background-image: none;
   }
 
   .advantages__item:nth-child(2) .advantages__wrapper {

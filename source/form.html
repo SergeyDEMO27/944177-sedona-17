@@ -9,7 +9,7 @@
   <body>
     <div style="display: none;">
       <include src="build/img/sprite.svg">
-      </inculde>
+      </include>
     </div>
     <div class="container">
       <header class="page-header">
@@ -63,8 +63,8 @@
             <fieldset class="feedback__contacts">
               <legend class="feedback__topic">Контактная информация:</legend>
               <ul class="feedback__contacts-list">
-                <li><label><span class="feedback__contacts-label feedback__contacts--phone"><span class="feedback__contacts-phone">Контактный</span> телефон*:</span><input type="tel" name="telephone" placeholder="Введите телефон" required></label></li>
-                <li><label><span class="feedback__contacts-label feedback__contacts--email">Электронная почта*:</span><input type="email" name="e-mail" placeholder="Введите e-mail" required></label></li>
+                <li><label><span class="feedback__contacts-label feedback__contacts-phone"><span>Контактный</span> телефон*:</span><input type="tel" name="telephone" placeholder="Введите телефон" required></label></li>
+                <li><label><span class="feedback__contacts-label feedback__contacts-email">Электронная почта*:</span><input type="email" name="e-mail" placeholder="Введите e-mail" required></label></li>
               </ul>
             </fieldset>
             <fieldset class="feedback__impression">
@@ -93,7 +93,7 @@
           <span class="feedback__note">* — обязательные поля</span>
         </section>
       </main>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--form">
         <div class="page-footer__wrapper">
           <div class="page-footer__social social">
             <b class="social__name">#VISITSEDONA</b>
@@ -136,14 +136,14 @@
       </footer>
     </div>
     <div class="modal hide">
-      <div class="modal__popup modal--success">
+      <div class="modal__popup modal-success">
         <h3 class="modal__title">Ваш отзыв отправлен!</h3>
         <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
         <div class="modal__wrapper">
           <button type="button" class="modal__btn">Закрыть окно</button>
         </div>
       </div>
-      <div class="modal__popup modal--error">
+      <div class="modal__popup modal-error">
         <h3 class="modal__title">Что-то пошло не так!</h3>
         <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button type="button" class="modal__btn">OK</button>
